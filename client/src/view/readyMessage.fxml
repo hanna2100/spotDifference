@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="500.0" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="sizeL" alignment="CENTER" prefHeight="74.0" prefWidth="553.0" text="게임 준비가 완료되었습니다!" />
+      <Text id="sizeM" strokeType="OUTSIDE" strokeWidth="0.0" text="모든 플레이어가 '준비하기'&#10;버튼을 누르면 게임이 시작됩니다.&#10;총 5개의 문제가 출제되며&#10;한 문제엔 5개의 정답좌표가 있습니다.&#10;&#10;상대방보다 더 많은&#10;득점을 하면 승리입니다.&#10;&#10;잘못 클릭하면 하트가 깎이니 주의하세요!&#10;5개의 하트가 없어지면 지게됩니다.&#10;" textAlignment="CENTER" wrappingWidth="475.8583984375" />
+      <Button id="btnOk" alignment="CENTER" mnemonicParsing="false" prefHeight="49.0" prefWidth="143.0" text="알겠습니다" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="30.0" right="30.0" />
+   </padding>
+</VBox>

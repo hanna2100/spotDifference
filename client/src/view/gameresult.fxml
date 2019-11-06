@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="lblTop" alignment="CENTER" prefHeight="101.0" prefWidth="400.0" text="승리!">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label id="lblScore" text="스코어" />
+      <Label id="lblMid" alignment="CENTER" prefHeight="132.0" prefWidth="400.0" text="중간내용이&#10;들어갑니다&#10;" textAlignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="68.0" prefWidth="400.0">
+         <children>
+            <Label id="sizeL" alignment="CENTER" contentDisplay="CENTER" prefHeight="68.0" prefWidth="400.0" text="Rp: " textAlignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label id="lblRp" alignment="CENTER" prefHeight="68.0" prefWidth="400.0" text="10" textAlignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label id="sizeL" alignment="CENTER" prefHeight="68.0" prefWidth="400.0" text="Coin:" textAlignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label id="lblCoin" alignment="CENTER" prefHeight="68.0" prefWidth="400.0" text="100" textAlignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" />
+         </VBox.margin>
+      </HBox>
+      <Button id="btnOk" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="56.0" prefWidth="218.0" text="로비로 돌아가기">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

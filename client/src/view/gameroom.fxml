@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="630.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameRoomController">
+   <children>
+      <Pane layoutX="15.0" layoutY="15.0" prefHeight="600.0" prefWidth="400.0" style="-fx-border-color: black;">
+         <children>
+            <ImageView fx:id="imageView1" fitHeight="600.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane" layoutX="430.0" layoutY="15.0" prefHeight="600.0" prefWidth="400.0" style="-fx-border-color: black;">
+         <children>
+            <ImageView fx:id="imageView2" fitHeight="600.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+            <Canvas fx:id="canvas" height="600.0" width="400.0" />
+         </children>
+      </Pane>
+      <AnchorPane layoutX="846.0" layoutY="14.0" prefHeight="244.0" prefWidth="148.0">
+         <children>
+            <Label id="sizeM" fx:id="hostNick" layoutY="125.0" prefHeight="40.0" prefWidth="157.0" text="닉네임" />
+            <ImageView fx:id="hostImg" fitHeight="90.0" fitWidth="90.0" layoutX="34.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+            <Label id="sizeM" layoutY="169.0" prefHeight="34.0" prefWidth="60.0" text="하 트 :" />
+            <Label id="sizeM" layoutY="204.0" prefHeight="40.0" prefWidth="73.0" text="맞춘 수 :" />
+            <HBox fx:id="hostHt" alignment="CENTER" layoutX="54.0" layoutY="159.0" prefHeight="46.0" prefWidth="97.0" />
+            <Label id="sizeM" fx:id="hostCnt" layoutX="75.0" layoutY="206.0" prefHeight="34.0" prefWidth="73.0" text="count" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="844.0" layoutY="251.0" prefHeight="258.0" prefWidth="157.0">
+         <children>
+            <Label id="sizeM" fx:id="guestNick" layoutX="2.0" layoutY="139.0" prefHeight="40.0" prefWidth="157.0" text="닉네임" />
+            <ImageView fx:id="guestImg" fitHeight="90.0" fitWidth="90.0" layoutX="36.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+            <Label id="sizeM" layoutX="2.0" layoutY="183.0" prefHeight="34.0" prefWidth="60.0" text="하 트 :" />
+            <Label id="sizeM" layoutX="2.0" layoutY="218.0" prefHeight="40.0" prefWidth="73.0" text="맞춘 수 :" />
+            <HBox fx:id="guestHt" alignment="CENTER" layoutX="55.0" layoutY="177.0" prefHeight="46.0" prefWidth="97.0" />
+            <Label id="sizeM" fx:id="guestCnt" layoutX="77.0" layoutY="220.0" prefHeight="34.0" prefWidth="73.0" text="count" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblReady" alignment="CENTER" layoutX="299.0" layoutY="251.0" prefHeight="148.0" prefWidth="252.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Ready">
+         <font>
+            <Font size="83.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStart" alignment="CENTER" layoutX="299.0" layoutY="251.0" prefHeight="148.0" prefWidth="252.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Start!">
+         <font>
+            <Font size="83.0" />
+         </font>
+      </Label>
+      <Label id="sizeXL" fx:id="lblWait1" alignment="CENTER" layoutX="299.0" layoutY="251.0" prefHeight="148.0" prefWidth="252.0" style="-fx-background-color: black; -fx-text-fill: white;" text="게임 대기중">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label id="sizeL" fx:id="lblWait2" alignment="CENTER" layoutX="299.0" layoutY="251.0" prefHeight="148.0" prefWidth="252.0" style="-fx-background-color: black; -fx-text-fill: white;" text="모든 플레이어가&#10;준비완료되면&#10;자동으로 시작합니다" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button id="sizeM" fx:id="btnReady" layoutX="844.0" layoutY="513.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="157.0" text="준비하기" />
+      <Button id="sizeM" fx:id="btnSurrender" layoutX="844.0" layoutY="568.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="73.0" text="기권" />
+      <Button id="sizeM" fx:id="btnExit" layoutX="928.0" layoutY="568.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="73.0" text="Exit" />
+      <Label id="sizeL" fx:id="lblNext" alignment="CENTER" layoutX="299.0" layoutY="251.0" prefHeight="148.0" prefWidth="252.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Clear!&#10;잠시후&#10;다음이미지로&#10;넘어갑니다!" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

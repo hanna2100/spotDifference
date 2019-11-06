@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateRoomController">
+   <children>
+      <Label id="sizeXL" alignment="CENTER" contentDisplay="CENTER" prefHeight="65.0" prefWidth="429.0" text="방 만들기" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Narrow" size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="340.0" spacing="20.0">
+         <children>
+            <Label id="sizeM" alignment="CENTER" prefHeight="53.0" prefWidth="80.0" text="방제" />
+            <TextField id="sizeM" fx:id="txtFieldRoomName" prefHeight="30.0" prefWidth="261.0" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="65.0" prefWidth="340.0" spacing="10.0">
+         <children>
+            <RadioButton id="sizeM" fx:id="rbPublic" mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" selected="true" text="공개">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup></RadioButton>
+            <RadioButton id="sizeM" fx:id="rbPrivate" mnemonicParsing="false" prefHeight="50.0" prefWidth="78.0" selected="false" text="비공개" toggleGroup="$group" />
+            <Label id="sizeM" alignment="CENTER" prefHeight="50.0" prefWidth="85.0" text="비밀번호" />
+            <TextField fx:id="txtFieldPw" disable="true" prefHeight="30.0" prefWidth="104.0" />
+         </children>
+      </HBox>
+      <Label id="sizeS" alignment="CENTER" prefHeight="23.0" prefWidth="390.0" text="* 비밀번호는 숫자 4자리로 입력하세요" />
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="340.0" spacing="50.0">
+         <children>
+            <Button id="sizeL" fx:id="btnOk" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="확인" />
+            <Button id="sizeL" fx:id="btnCancel" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="취소" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>

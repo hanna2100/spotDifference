@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="630.0" prefWidth="1020.0" stylesheets="@../application/clientcss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <HBox layoutY="315.0" prefHeight="315.0" prefWidth="670.0">
+         <children>
+            <VBox prefHeight="315.0" prefWidth="670.0" spacing="20.0">
+               <children>
+                  <Label id="sizeXL" text="대기실 채팅방">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <TextArea id="sizeM" fx:id="txtAreaChatting" prefHeight="158.0" prefWidth="602.0" />
+                  <TextField id="sizeM" fx:id="txtFieldChatting" prefHeight="23.0" prefWidth="449.0" />
+               </children>
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="15.0" top="30.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="315.0" prefWidth="341.0" spacing="20.0">
+               <children>
+                  <Label id="sizeXL" text="접속자">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <TextArea id="sizeM" fx:id="txtAreaClients" prefHeight="210.0" prefWidth="111.0" />
+               </children>
+               <padding>
+                  <Insets bottom="30.0" left="15.0" right="30.0" top="30.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox prefHeight="315.0" prefWidth="670.0" spacing="20.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label id="sizeXL" alignment="BOTTOM_LEFT" text="방 리스트                         ">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Button id="sizeL" fx:id="btnRefresh" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="53.0" prefWidth="157.0" text="새로고침" />
+               </children>
+            </HBox>
+            <TableView id="sizeM" fx:id="tblGameRoom" maxWidth="610.0" prefHeight="214.0" prefWidth="610.0" />
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+      <VBox id="sizeL" layoutX="662.0" layoutY="1.0" prefHeight="634.0" prefWidth="352.0" spacing="20.0">
+         <children>
+            <Label id="sizeXL" text="랭크">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TableView id="sizeM" fx:id="tblRank" prefHeight="338.0" prefWidth="292.0" />
+            <GridPane alignment="CENTER" prefHeight="157.0" prefWidth="292.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button id="sizeL" fx:id="btnCreateRoom" mnemonicParsing="false" prefHeight="149.0" prefWidth="260.0" text="방 만들기" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button id="sizeL" fx:id="btnGameStart" mnemonicParsing="false" prefHeight="96.0" prefWidth="184.0" text="입장하기">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button id="sizeL" fx:id="btnLogout" mnemonicParsing="false" prefHeight="103.0" prefWidth="179.0" text="로그아웃" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button id="sizeL" fx:id="btnMyinfo" mnemonicParsing="false" prefHeight="134.0" prefWidth="178.0" text="내 정보" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin></Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

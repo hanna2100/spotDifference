@@ -1,0 +1,64 @@
+#sizeXL {
+    -fx-font-family: "Yeon Sung";
+    -fx-font-size: 40.0;
+}
+#sizeL{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 25.0;	
+}
+#sizeM {
+    -fx-font-family: "Yeon Sung";
+    -fx-font-size: 20.0;
+}
+#sizeS{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 15.0;
+}
+#btnOk{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 20.0;
+}
+#btnCancel{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 20.0;
+}
+#lblTop{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 40.0;
+}
+#lblScore{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 20.0;
+}
+#lblMid{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 20.0;
+}
+#lblRp{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 20.0;
+}
+#lblCoin{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 20.0;
+}
+#lblNick{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 30.0;
+}
+#txtField{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 20.0;
+}
+#pieChart{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 20.0;
+}
+#lineChart{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 20.0;
+}
+#btnRating{
+	-fx-font-family: "Yeon Sung";
+    -fx-font-size: 20.0;
+}

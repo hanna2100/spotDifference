@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" stylesheets="@../application/clientcss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label id="sizeXL" alignment="CENTER" contentDisplay="CENTER" prefHeight="98.0" prefWidth="400.0" text="틀린 그림 찾기" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label id="sizeL" layoutX="73.0" layoutY="104.0" text="아이디">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label id="sizeL" layoutX="73.0" layoutY="140.0" text="패스워드">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField id="sizeS" fx:id="txtFieldID" layoutX="173.0" layoutY="102.0" prefHeight="23.0" prefWidth="158.0" />
+      <PasswordField id="sizeS" fx:id="pwFieldPW" layoutX="174.0" layoutY="139.0" prefHeight="23.0" prefWidth="158.0" />
+      <Button id="sizeS" fx:id="btnLogin" layoutX="73.0" layoutY="227.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="82.0" text="로그인">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button id="sizeS" fx:id="btnJoin" layoutX="161.0" layoutY="227.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="82.0" text="회원가입">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button id="sizeM" fx:id="btnConnectServer" layoutX="73.0" layoutY="181.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="257.0" text="서버연결">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button id="sizeS" fx:id="btnExit" layoutX="248.0" layoutY="227.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="82.0" text="나가기">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

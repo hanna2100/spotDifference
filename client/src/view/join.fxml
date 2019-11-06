@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JoinController">
+   <padding>
+      <Insets bottom="40.0" left="50.0" right="50.0" top="40.0" />
+   </padding>
+   <children>
+      <Label id="sizeXL" alignment="CENTER" prefHeight="87.0" prefWidth="400.0" text="회원가입" />
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="240.0" spacing="20.0">
+         <children>
+            <Label id="sizeM" alignment="CENTER" prefHeight="46.0" prefWidth="93.0" text="아이디" />
+            <TextField id="sizeM" fx:id="txtFieldId" prefHeight="33.0" prefWidth="145.0" />
+            <Button id="sizeM" fx:id="btnIdConfirm" mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0" text="중복확인" />
+         </children>
+      </HBox>
+      <Label id="sizeS" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="0.0" prefWidth="400.0" text="* 4~10자의 영문 소문자와 숫자" />
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <Label id="sizeM" alignment="CENTER" prefHeight="49.0" prefWidth="101.0" text="비밀번호" />
+            <PasswordField id="sizeM" fx:id="pwField1" prefHeight="33.0" prefWidth="145.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <Label id="sizeM" alignment="CENTER" prefHeight="49.0" prefWidth="101.0" text="└ 확인" />
+            <PasswordField id="sizeM" fx:id="pwField2" prefWidth="145.0" />
+            <Button id="sizeM" fx:id="btnPwConfirm" mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0" text="일치확인" />
+         </children>
+      </HBox>
+      <Label id="sizeS" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="0.0" prefWidth="400.0" text="* 4~10자의 영문 대소문자와 숫자" />
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="240.0" spacing="20.0">
+         <children>
+            <Label id="sizeM" alignment="CENTER" prefHeight="49.0" prefWidth="101.0" text="닉네임" />
+            <TextField id="sizeM" fx:id="nickname" prefHeight="33.0" prefWidth="146.0" />
+            <Button id="sizeM" fx:id="btnNameConfirm" mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0" text="중복확인" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="132.0" prefWidth="400.0" spacing="50.0">
+         <children>
+            <Button id="sizeL" fx:id="btnOk" mnemonicParsing="false" prefHeight="49.0" prefWidth="116.0" text="확 인" />
+            <Button id="sizeL" fx:id="btnCancel" mnemonicParsing="false" prefHeight="54.0" prefWidth="116.0" text="취 소" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
